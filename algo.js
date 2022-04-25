@@ -238,4 +238,35 @@ let vals = [5, 4, 1, 2, 9, 55, 34, 2, 5, 66];
 //     return newVal;
 //   }
 // };
-// console.log(basicOp("+", 3, 7));
+// // console.log(basicOp("+", 3, 7));
+
+// let grow = (x) => {
+//   i = 0;
+//   return x.reduce((a, b) => a * b, i);
+// };
+
+// function boolToWord( bool ){bool.includes("") {return "yes"}
+//                             return "No
+//   //...
+// }
+
+// let boolToWord = (bool) => {
+//   if (bool.includes("") === true) {
+//     return "Yes";
+//   }
+//   return "No";
+// };
+
+// let cockroachSpeedRun = (s) => {
+//   cm = s * 27.777;
+//   return Math.floor(cm);
+// };
+// console.log(cockroachSpeedRun(8));
+
+let findNeedle = (array) => {
+  for (i = 0; i, array.length; i++) {
+    if (array[i] === "needle") {
+      return `Found the needle at position ${i}`;
+    }
+  }
+};
