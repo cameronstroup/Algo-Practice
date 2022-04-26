@@ -263,10 +263,78 @@ let vals = [5, 4, 1, 2, 9, 55, 34, 2, 5, 66];
 // };
 // console.log(cockroachSpeedRun(8));
 
-let findNeedle = (array) => {
-  for (i = 0; i, array.length; i++) {
-    if (array[i] === "needle") {
-      return `Found the needle at position ${i}`;
-    }
-  }
-};
+// let findNeedle = (array) => {
+//   for (i = 0; i, array.length; i++) {
+//     if (array[i] === "needle") {
+//       return `Found the needle at position ${i}`;
+//     }
+//   }
+// };
+
+// let minMax = (arr) => {
+//   newArray = [];
+//   newArray.push(Math.min(...arr));
+//   newArray.push(Math.max(...arr));
+//   return newArray;
+// };
+
+// console.log(minMax(vals));
+
+// let factorial = (n) => {
+//   newArray = [];
+//   initialValue = 0;
+//   for (i = n; i > 0; i--) {
+//     newArray.push(i);
+//   }
+//   answer = newArray.map((x) => x * x);
+
+//   let finalAnswer = answer.reduce((a, b) => a + b, initialValue);
+//   return finalAnswer;
+// };
+// // console.log(factorial(10));
+
+// let factorial = (n) => {
+//   newArray = [];
+//   initialValue = 1;
+//   for (i = n; i > 0; i--) {
+//     newArray.push(i);
+//   }
+
+//   let finalAnswer = newArray.reduce((a, b) => a * b, initialValue);
+//   if (finalAnswer > 13 || finalAnswer < -1) {
+//     throw new RangeError("The argument must be between 0 and 12.");
+//     a;
+//   }
+//   return finalAnswer;
+// };
+// console.log(factorial(2));
+
+// litres = (time) => {
+//   return math.floor(time / 2);
+// };
+
+// console.log(litres(0.5));
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// isPalindrome = (str) => {
+//   array = [...str];
+//   if (array === array.reverse()) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// console.log(isPalindrome("hello"));
+// // console.log(vals.reverse());
+
+// let findshort = (s) => {
+//   newArray = [];
+//   revmoveStr = s.split(" ");
+//   for (let i = 0; i < revmoveStr.length; i++) {
+//     newArray.push(revmoveStr[i].length);
+//   }
+//   orderArray = newArray.sort((a, b) => a - b);
+//   return orderArray[0];
+// };
+
+// let string = "cameron is so cool, how is he so cool?";
+// console.log(findshort(string));
