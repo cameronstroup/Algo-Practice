@@ -291,7 +291,7 @@ let vals = [5, 4, 1, 2, 9, 55, 34, 2, 5, 66];
 //   let finalAnswer = answer.reduce((a, b) => a + b, initialValue);
 //   return finalAnswer;
 // };
-// // console.log(factorial(10));
+// console.log(factorial(10));
 
 // let factorial = (n) => {
 //   newArray = [];
@@ -338,3 +338,170 @@ let vals = [5, 4, 1, 2, 9, 55, 34, 2, 5, 66];
 
 // let string = "cameron is so cool, how is he so cool?";
 // console.log(findshort(string));
+// getAge = (string) => {
+//   return parseInt(string.split(""));
+// };
+
+// // console.log(getAge("4 years old"));
+
+// let twoSort = (string) => {
+//   order = string.sort((a, b) => a.localeCompare(b));
+// //   order[0];
+// // };
+// // console.log();
+
+// // // nameArray = ["cameorn", "hunter", "abby"];
+// // // console.log(twoSort(nameArray));
+// // squareSum = (x) => {
+// //   i = 0;
+// //   newArray = x.map((a) => a * a);
+// //   answer = newArray.reduce((a, b) => {
+// //     a + b, i;
+// //     return answer;
+// //   });
+// // };
+// // console.log(squareSum(vals));
+// const rps = (p1, p2) => {
+//   if ((p1 === "scissors") & (p2 === "paper")) {
+//     return "Player 1 won!}";
+//   }
+//   if ((p1 === "scissors") & (p2 === "rock")) {
+//     return "Player 1 won!}";
+//   }
+//   if (p1 === p2) {
+//     return "Draw!";
+//   }
+//   {
+// //     return "player 2 won!";
+// //   }
+// // };
+// our start-up's BA has told marketing that your website has a large audience in Scandinavia and surrounding countries. Marketing thinks it would be great to welcome visitors to the site in their own language. Luckily you already use an API that detects the user's location, so this is an easy win.
+
+// The Task
+// Think of a way to store the languages as a database (eg an object). The languages are listed below so you can copy and paste!
+// Write a 'welcome' function that takes a parameter 'language' (always a string), and returns a greeting - if you have it in your database. It should default to English if the language is not in the database, or in the event of an invalid input.
+// function greet(lang) {
+//   return langs[lang] || langs["english"];
+// }\function greet(lang) {
+
+// function greet(lang) {
+//   return langs[lang] || langs["english"];
+// }
+
+// var langs = {
+//   czech: "Vitejte",
+//   danish: "Velkomst",
+//   dutch: "Welkom",
+//   estonian: "Tere tulemast",
+//   finnish: "Tervetuloa",
+//   flemish: "Welgekomen",
+//   french: "Bienvenue",
+//   german: "Willkommen",
+//   irish: "Failte",
+//   italian: "Benvenuto",
+//   latvian: "Gaidits",
+//   lithuanian: "Laukiamas",
+//   polish: "Witamy",
+//   spanish: "Bienvenido",
+//   swedish: "Valkommen",
+//   welsh: "Croeso",
+// // };
+
+// function noSpace(x) {
+//   return x.split(" ").join("");
+// }
+
+// console.log(noSpace("what is up today, I am so happy"));
+
+// let disemvowel = (str) => {
+//   newArray = [];
+//   for (i = 0; i < str.length; i++) {
+//     if (
+//       (str[i] != "a") &
+//       (str[i] != "A") &
+//       (str[i] != "e") &
+//       (str[i] != "E") &
+//       (str[i] != "I") &
+//       (str[i] != "i") &
+//       (str[i] !== "o") &/       (str[i] != "O") &
+//       (str[i] !== "u") &
+//       (str[i] != "U")
+//     ) {
+//       newArray.push(str[i]);
+//     }
+//   }
+//   return newArray.join("");
+// };
+
+// string = "what is up today, I am so happy";
+// console.log(disemvowel(string));
+// function disemvowel(str) {
+//   return str.replace(/[aeiou]/gi, "");
+// // }
+
+// let oddOrEven = (array) => {
+//   i = 0;
+//   newA = array.reduce((a, b) => a + b, i);
+//   if (newA % 2 === 0) {
+//     return "even";
+//   }
+//   return "odd";
+// };
+
+// console.log(oddOrEven(vals));
+
+// let isSquare = (n) => {
+//   newArray = [];
+//   for (i = 0; i <= n; i++) {
+//     newArray.push(i);
+//   }
+//   for (i = 0; i < newArray.length; i++) {
+//     if (newArray[i] * newArray[i] === n) {
+//       return true;
+// //     }
+// //   }
+// //   return false;
+// // };
+
+// // console.log(isSquare(13));
+
+// // let isSquare = (n) => {
+// //   Number.isInteger.isSquare;
+// // };
+// function century(year) {
+//   // Finish this :)
+// //   return math.floor(year / 10) + 1;
+// // }
+
+// let string = ["hello", "world", "this", "is", "great"];
+
+// let smash = (words) => {
+//   let newString = words.toString();
+//   return newString.replace(",", " ");
+// // };
+
+// // console.log(smash(string));
+
+// // let descendingOrder = (n) => {
+// //   newArray = Array.from(String(n), Number);
+
+// //   sortedArray = newArray.sort((a, b) => b - a);
+
+// //   return parseInt(sortedArray.join(""));
+// // };
+
+// // console.log(descendingOrder(1343534643225));
+
+// let summation = (num) => {
+//   let newVal = 0;
+//   for (i = 0; i <= num; i++) {
+//     newVal = newVal + i;
+//   }
+//   return newVal;
+// };
+
+// console.log(summation(8));
+
+let arrayDiff = (arr, query) => {
+  return arr.filter((el) => el.indexOf(query) !== -1);
+};
