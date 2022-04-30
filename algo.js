@@ -496,12 +496,61 @@ let vals = [5, 4, 1, 2, 9, 55, 34, 2, 5, 66];
 //   let newVal = 0;
 //   for (i = 0; i <= num; i++) {
 //     newVal = newVal + i;
-//   }
-//   return newVal;
-// };
+// //   }
+// //   return newVal;
+// // };
 
-// console.log(summation(8));
+// // console.log(summation(8));
 
-let arrayDiff = (arr, query) => {
-  return arr.filter((el) => el.indexOf(query) !== -1);
+// let arrayDiff = (arr, query) => {
+//   return arr.filter((el) => el.indexOf(query) !== -1);
+// // };
+// var alphabet = [
+//   "a",
+//   "b",
+//   "c",
+//   "d",
+//   "e",
+//   "f",
+//   "g",
+//   "h",
+//   "i",
+//   "j",
+//   "k",
+//   "l",
+//   "m",
+//   "n",
+//   "o",
+//   "p",
+//   "q",
+//   "r",
+//   "s",
+//   "t",
+//   "u",
+//   "v",
+//   "w",
+//   "x",
+//   "y",
+//   "z",
+// ];
+
+// // let alphabetPosistion = (text) => {};
+// let uniqueInOrder = (iterable) => {
+//   let newArr = [];
+//   for (let i = 0; i < iterable.length; i++) {
+//     if (iterable[i] != iterable[i + 1]) {
+//       newArr.push(iterable[i]);
+//     }
+// //   }
+// //   return newArr;
+// // };
+// let x = "1 2 3 4 5"; // console.log(uniqueInOrder("AAAAAAAAAAAbbbbBCC"));
+
+// let highAndLow = (numbers) =>
+//   `${Math.max(...numbers.split(" "))}${Math.min(...numbers.split(" "))}`;
+let lovefunc = (flower1, flower2) => {
+  if ((flower1 + flower2) % 2 === 0) {
+    return false;
+  }
+  return true;
 };
