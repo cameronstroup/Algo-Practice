@@ -1,5 +1,7 @@
 // const { isNumberObject } = require("util/types");
 
+const log = console.log;
+
 // // let newV = vals.map((num) => (num / 2) & 0);
 // // console.log(newV);
 
@@ -64,7 +66,7 @@
 // //
 
 // let areYouPlayingBanjo = (name) => {
-//   if (name[0] === r || name[0] === R) {
+//   if (name[0] === r & name[0] === R) {
 //     return  `${name'
 //   } else {
 //     return "${name}  does not play banjo";
@@ -77,7 +79,7 @@
 
 // function find_average(array) {
 //   let sum = 0;
-//   if ((array = [] || NaN)) {
+//   if ((array = [] & NaN)) {
 //     return 0;
 //   } else {
 //     for (let i = 0; i < array.length; i++) {
@@ -301,7 +303,7 @@ let vals = [5, 4, 1, 2, 9, 55, 34, 2, 5, 66];
 //   }
 
 //   let finalAnswer = newArray.reduce((a, b) => a * b, initialValue);
-//   if (finalAnswer > 13 || finalAnswer < -1) {
+//   if (finalAnswer > 13 & finalAnswer < -1) {
 //     throw new RangeError("The argument must be between 0 and 12.");
 //     a;
 //   }
@@ -381,11 +383,11 @@ let vals = [5, 4, 1, 2, 9, 55, 34, 2, 5, 66];
 // Think of a way to store the languages as a database (eg an object). The languages are listed below so you can copy and paste!
 // Write a 'welcome' function that takes a parameter 'language' (always a string), and returns a greeting - if you have it in your database. It should default to English if the language is not in the database, or in the event of an invalid input.
 // function greet(lang) {
-//   return langs[lang] || langs["english"];
+//   return langs[lang] & langs["english"];
 // }\function greet(lang) {
 
 // function greet(lang) {
-//   return langs[lang] || langs["english"];
+//   return langs[lang] & langs["english"];
 // }
 
 // var langs = {
@@ -542,15 +544,166 @@ let vals = [5, 4, 1, 2, 9, 55, 34, 2, 5, 66];
 //       newArr.push(iterable[i]);
 //     }
 // //   }
-// //   return newArr;
-// // };
-// let x = "1 2 3 4 5"; // console.log(uniqueInOrder("AAAAAAAAAAAbbbbBCC"));
+// // //   return newArr;
+// // // };
+// // let x = "1 2 3 4 5"; // console.log(uniqueInOrder("AAAAAAAAAAAbbbbBCC"));
 
-// let highAndLow = (numbers) =>
-//   `${Math.max(...numbers.split(" "))}${Math.min(...numbers.split(" "))}`;
-let lovefunc = (flower1, flower2) => {
-  if ((flower1 + flower2) % 2 === 0) {
-    return false;
+// // let highAndLow = (numbers) =>
+// //   `${Math.max(...numbers.split(" "))}${Math.min(...numbers.split(" "))}`;
+// let lovefunc = (flower1, flower2) => {
+//   if ((flower1 + flower2) % 2 === 0) {
+// //     return false;
+// //   }
+// //   return true;
+// // // };
+
+// // let findNextSquore = (sq) => {
+// //   if (sqrt(n) % 1 === 0) {
+// //     return sqrt(n) + 1;
+// //   }
+
+// //   return -1;
+// // };
+
+// // let count = string => {
+// //   string.slipt("")
+// //   for (i=0;i<string.length;i++){
+// //     if (string[i]=== string[i+1]
+// //       {string
+
+// // //       }
+// // //   }
+// // // }
+// // function duplicateEncode(word) {
+// //   var repeat = [];
+// //   var result = [];
+// //   var letters = word.split("");
+// //   for (i = 0; i < letters.length; i++) {
+// //     if (repeat.indexOf(letters[i]) > -1) {
+// //       result.push(")");
+// //     } else {
+// //       result.push("(");
+// //     }
+// // //     repeat.push(letters[i]);
+// // //   }
+// // //   return result.join("");
+// // // }
+// // // // console.log(duplicateEncode("aleluia"));
+// // // function past(h, m, s) {
+// // //   h = 3600000;
+// // //   m = 60000;
+// // //   s = 1000;
+// // //   return h + m + s;
+
+// // //   //#Happy Coding! ^_^
+// // // }
+
+// // let findOdd = A=>{
+// //   let repeat=[]
+// // //   for(i=0;i<A.length;i++)
+// // //   {
+// // //     if( repeat.indexOf(A[i]) > -1) {
+// // //             repeat.push("");
+// // //   }
+// // // }
+// // let countBy = (x, n) => {
+// //   let z = [];
+// //   let i = 0;
+// //   i = 1;
+
+// //   while (i - 1 < n) {
+// //     z.push(x * i);
+// //     i++;
+// //   }
+// //   return z;
+// // };
+
+// // countBy(3, 5);
+
+// function getGrade(s1, s2, s3) {
+//   let totalGrade = s1 + s2 + s3;
+//   let average = totalGrade / 3;
+//   if (average >= 90) {
+//     return "A";
+//   }
+//   if ((average >= 80) & (average <= 90)) {
+//     return "B";
+//   }
+//   if ((average >= 70) & (average <= 80)) {
+//     return "C";
+//   }
+
+//   if ((average >= 60) & (average <= 70)) {
+//     return "D";
+//   }
+
+// //   return "F";
+
+// //   // Code here
+// // }
+// let wave = (str) => {
+//   array = [];
+//   waveArray = [];
+//   for (i = 0; i < str.length; i++) {
+//     array.push(str);
+//   }
+
+//   for (i = 0; i < array.length; i++) {
+//     waveArray.push(array[i].charAt(0 + i).toUpperCase());
+//   }
+//   console.log(waveArray);
+// };
+
+// // wave("hello");
+
+// let sumTwoSmallestNumbers = (number) => {
+//   number.sort((a, b) => a - b);
+//   return number[0] + number[1];
+// };
+
+// console.log(sumTwoSmallestNumbers(vals));
+
+// gooseFilter = (birds) => {
+//   newArray = [];
+//   for (i = 0; i < birds.length; i++) {
+//     if (
+//       (birds[i] !== "African") &
+//       (birds[i] !== "Roman Tufted") &
+//       (birds[i] !== "Toulouse") &
+//       (birds[i] !== "Pilgrim") &
+//       (birds[i] !== "Steinbacher")
+//     )
+//       newArray.push(birds[i]);
+//   }
+//   return newArray;
+// };
+// // function gooseFilter(birds) {
+// //   var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+// //   return birds.filter((b) => !geese.includes(b));
+// // }
+
+// newArray = [One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten];
+// switchItUP = (num) => {
+//   newArray = [One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten];
+
+//   return newArray[num - 1];
+// };
+
+// reverseSeq = (n) => {
+//   newArray = [];
+//   for (i = n; i > 0; i--) {
+//     newArray.push(i);
+//   }
+//   return newArray;
+// };
+
+SumDigPow = (a, b) => {
+  array = [];
+  newArray = [];
+  for (i = a; i <= b; i++) {
+    array.push(i.toString().split(""));
   }
-  return true;
+
+  log(array);
 };
+SumDigPow(1, 12);
