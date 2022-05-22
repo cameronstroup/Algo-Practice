@@ -697,13 +697,168 @@ let vals = [5, 4, 1, 2, 9, 55, 34, 2, 5, 66];
 //   return newArray;
 // };
 
-SumDigPow = (a, b) => {
-  array = [];
-  newArray = [];
-  for (i = a; i <= b; i++) {
-    array.push(i.toString().split(""));
-  }
+// SumDigPow = (a, b) => {
+//   array = [];
+//   newArray = [];
+//   for (i = a; i <= b; i++) {
+//     array.push(i.toString().split(""));
+//   }
 
-  log(array);
-};
-SumDigPow(1, 12);
+// //   log(array);
+// // };
+// // SumDigPow(1, 12);
+
+// let removeChar = (str) => {
+//   newstring = [];
+//   for (i = 1; i < str.length - 1; i++) {
+//     newstring.push(i);
+//   }
+//   return newstring.join("");
+// };
+
+// sortArray = (array) => {
+//   arrayE = [];
+//   arrayO = [];
+//   finalArray - [];
+
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] % 2 === 0) {
+//       arrayE.push(array[i]);
+//     }
+//     arrayO.push(array[i]);
+//   }
+//   arrayO.sort((a, b) => a - b);
+
+//   log(arrayO);
+// };
+
+// sortArray(vals);
+
+//prtotype methode,
+
+// const Trip = function (location, vacationtype, cost, budgit) {
+//   this.location = location;
+//   this.vacationtype = vacationtype;
+//   this.cost = cost;
+//   this.budgit = budgit;
+// };
+
+// const montanatrip = new Trip("Montans", "Wedding", 1000, 1233);
+
+// Trip.prototype.calcCost = function () {
+//   console.log(this.budgit - this.cost + "$");
+// };
+// montanatrip.calcCost();
+
+// console.log(montanatrip.cost);
+letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
+// vals.map();
+// count = {};
+// letters.forEach((item) => {
+//   if (count[item]) {
+//     count[item]++;
+//   } else count[item] = 1;
+// });
+
+// console.log(count);
+
+// var events = [
+//   {
+//     userId: 1,
+//     place: "Wormholes Allow Information to Escape Black Holes",
+//     name: "Check out this recent discovery about workholes",
+//     date: "2020-06-26T17:58:57.776Z",
+//     id: 1,
+//   },
+//   {
+//     userId: 1,
+//     place: "Wormholes Allow Information to Escape Black Holes",
+//     name: "Check out this recent discovery about workholes",
+//     date: "2020-06-26T17:58:57.776Z",
+//     id: 2,
+//   },
+//   {
+//     userId: 1,
+//     place: "Cameron is cool",
+//     name: "thses are all the same",
+//     date: "2020-06-26T17:58:57.776Z",
+//     id: 3,
+//   },
+// ];
+// // cameron = events.map((event) => ({ wormhole: event.name, hello: event.place }));
+// // console.log(cameron);
+// num = 0;
+// Lake = vals.reduce((a, b) => a + b, num);
+// console.log(Lake);
+
+// let removeEveryOther = (arr) => {
+//   for (i = 0; i < arr.length; i + 3) {
+//     newarray = arr.push;
+//   }
+//   log(newarray);
+// // };
+
+// let feast = (beast, dish) => {
+//   if (
+//     (beast[0] === dish[0]) &
+//     (beast[beast.length - 1] === dish[dish.length - 1])
+//   ) {
+// //     return true;
+// //   } else {
+// //     return false;
+// //   }
+// // };
+
+// const getCount = (str) => {
+//   let vowelsCount = 0;
+//   for (i = 0; i < str.lengtj; i++) {
+//     if (
+//       str[i] == a ||
+//       str[i] == e ||
+//       str[i] == i ||
+//       str[i] == o ||
+//       str[i] == u
+//     ) {
+//       vowelsCount++;
+//     }
+//   }
+//   return vowelsCount;
+// };
+
+// const humanYearsCatYearsDogYears = (humanYears) => {
+//   newArray = [];
+//   newArray.push(humanYears);
+
+//   if (humanYears === 1) {
+//     newArray.push(15);
+//   } else if (humanYears === 2) {
+//     newArray.push(24);
+//   } else {
+//     newArray.push(humanYears * 4 + 16);
+//   }
+//   if (humanYears === 1) {
+//     newArray.push(15);
+//   } else if (humanYears === 2) {
+//     newArray.push(24);
+//   } else {
+//     newArray.push(humanYears * 5 + 14);
+//   }
+//   return newArray;
+// };
+// function makeNegative(num) {
+//   if (num < 0) {
+//     return num;
+//   } else {
+// //     return num * -1;
+// //   }
+// // }
+// test = [2, 2, 3, 1, 2, 1];
+// const removeSmallest = (numbers) => {
+//   newArray = [];
+//   // newArray = numbers.map((x) => x * 1);
+//   let indexOfMin = numbers.indexOf(Math.min(...numbers));
+
+//   log(indexOfMin);
+// };
+
+// removeSmallest(test);
