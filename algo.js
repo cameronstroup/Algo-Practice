@@ -1,5 +1,7 @@
 // const { isNumberObject } = require("util/types");
 
+const { text } = require("express");
+
 const log = console.log;
 
 // // let newV = vals.map((num) => (num / 2) & 0);
@@ -861,4 +863,119 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 //   log(indexOfMin);
 // };
 
-// removeSmallest(test);
+// // removeSmallest(test);
+// let rentalCarCost = (a) => {
+//   if (a == 1) {
+//     return 40;
+//   }
+//   if (a == 2) {
+//     return 80;
+//   }
+//   if ((a >= 3) & (a < 7)) {
+//     return a * 40 - 20;
+// //   }
+// //   return a * 40 - 50;
+// // };
+// lake = ["a", "b", "c"];
+// let number = (array) => {
+//   newArray = [];
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] == "a") {
+//       newArray.push("1: a");
+//     }
+//     if (array[i] == "b") {
+//       newArray.push("2: b");
+//     }
+//     if (array[i] == "c") {
+//       newArray.push("3: c");
+//     }
+//   }
+//   return newArray;
+// // };
+// let stops = [
+//   [10, 0],
+//   [3, 5],
+//   [5, 8],
+// ];
+// // log(number(lake));
+// const number = (busStops) => {
+//   onTheBus = 0;
+//   offTheBus = 0;
+//   for (i = 0; i < busStops.length; i++) {
+//     onTheBus = busStops[i][0] + onTheBus;
+//     offTheBus = busStops[i][1] + offTheBus;
+//   }
+//   total = onTheBus - offTheBus;
+//   return total;
+// // };
+// // number(stops);
+// test = ["Beg", "Life", "I", "To"];
+// const sortByLength = (array) => {
+// //   return array.sort((a, b) => b.length - a.length);
+// // };
+// lake = 40452;
+// // log(sortByLength(test));
+// let expandedForm = (num) => {
+//   power = num.length;
+//   nNum = num.toString();
+//   newArray = [];
+//   finalArray = [];
+
+//   for (i = 0; i < nNum.length; i++) {
+//     if (nNum[i] == 0) {
+//       newArray.push();
+//     } else {
+//       newArray.push(parseInt(nNum[i]) * Math.pow(10, nNum.length - 1 - i));
+//     }
+//     newArray;
+//   // }
+//   for (j = 0; j < newArray.length; j++) {
+//     finalArray.push(`${newArray[j]} +`);
+//   }
+//   return finalArray.join(" ").slice(0, -2);
+// };
+
+// // expandedForm(lake);
+// // log(expandedForm(lake));
+// const twiceAsOld = (dadYearsOld, sonYearsOld) => {
+//   return Math.abs(dadYearsOld - sonYearsOld * 2);
+// };
+
+// // log(twiceAsOld(50, 34));
+// dan = "GCAT";
+// const DNAtoRNA = (dna) => {
+//   newAaray = [];
+//   [...dna].forEach((a) => {
+//     if (a == "T") {
+//       newAaray.push("U");
+//     } else {
+//       newAaray.push(a);
+//     }
+//   });
+//   return newAaray.join("");
+// };
+// DNAtoRNA(dan);
+// let tester = [9, 3, "7", "3"];
+
+// const sumMix = (array) => {
+//   i = 0;
+//   newArray = [];
+//   array.forEach((a) => {
+//     newArray.push(Number(a));
+//   });
+//   return newArray.reduce((a, b) => a + b, 0);
+// };
+
+// log(sumMix(tester));
+test = [1, 2, "aasf", "1", "123", 123];
+const filter_list = (l) => {
+  newArray = [];
+  for (i = 0; i < l.length; i++) {
+    if (typeof l[i] == "number") {
+      newArray.push(l[i]);
+    }
+  }
+  return newArray;
+};
+
+log(filter_list(test));
