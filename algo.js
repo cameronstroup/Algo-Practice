@@ -962,20 +962,28 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 //   newArray = [];
 //   array.forEach((a) => {
 //     newArray.push(Number(a));
-//   });
-//   return newArray.reduce((a, b) => a + b, 0);
+// //   });
+// //   return newArray.reduce((a, b) => a + b, 0);
+// // };
+
+// // log(sumMix(tester));
+// test = [1, 2, "aasf", "1", "123", 123];
+// const filter_list = (l) => {
+//   newArray = [];
+//   for (i = 0; i < l.length; i++) {
+//     if (typeof l[i] == "number") {
+//       newArray.push(l[i]);
+//     }
+//   }
+//   return newArray;
 // };
 
-// log(sumMix(tester));
-test = [1, 2, "aasf", "1", "123", 123];
-const filter_list = (l) => {
-  newArray = [];
-  for (i = 0; i < l.length; i++) {
-    if (typeof l[i] == "number") {
-      newArray.push(l[i]);
-    }
-  }
-  return newArray;
-};
+// let test = [2, 3, 1];
+// // log(filter_list(test));
+// const gimme = (triplet) => {
+//   newArray = triplet.map((x) => x * 1);
+//   sort = triplet.sort((a, b) => a - b);
+//   return newArray.indexOf(sort[1]);
+// };
 
-log(filter_list(test));
+// log(gimme(test));
