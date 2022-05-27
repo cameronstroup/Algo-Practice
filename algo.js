@@ -987,3 +987,152 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 // };
 
 // log(gimme(test));
+// const roundToNext5 = (n) => {
+//   helper = n % 5;
+
+//   if (helper == 0) {
+//     return n;
+//   }
+//   if (n < -6) {
+//     return n - helper;
+//   }
+
+//   if ((n >= -5) & (n < 0)) {
+//     return 0;
+//   }
+//   if ((n < 5) & (n > 0)) {
+//     return 5;
+//   }
+//   return n + 5 - helper;
+// // };
+// // log(roundToNext5(-5));
+
+// const amazoneDelivery = (weeks) => {
+//   let days = 5;
+//   let hours = 8;
+//   let pay = 18.25;
+//   let tax = 0.88;
+//   log(days * hours * pay * tax * weeks);
+// };
+
+// amazoneDelivery(4);
+// testData = [
+//   [18, 20],
+//   [45, 2],
+//   [61, 12],
+//   [37, 6],
+//   [21, 21],
+//   [78, 9],
+// ];
+// const openOrSenior = (data) => {
+//   newArray = [];
+//   for (i = 0; i < data.length; i++) {
+//     if ((data[i][0] >= 55) & (data[i][1] > 7)) {
+//       newArray.push("Senior");
+//     } else {
+//       newArray.push("Open");
+//     }
+//   }
+//   return newArray;
+// };
+
+// // log(openOrSenior(testData));
+// const arithmetic = (a, b, operator) => {
+//   if ((operator = "add")) {
+//     return a + b;
+//   }
+//   if ((operator = "subtract")) {
+//     return a - b;
+//   }
+//   if ((operator = "multiply")) {
+//     return a * b;
+//   }
+//   if ((operator = "divide")) {
+//     return a / b;
+//   }
+// };
+// log(arithmetic(7, 5, "multiply"));
+// let test = ["Alex", "Jacob", "Mark", "Max"];
+// const likes = (names) => {
+//   if (names.length == 0) {
+//     return "no one likes this";
+//   }
+//   if (names.length == 1) {
+//     return `${names[0]} likes this`;
+//   }
+//   if (names.length == 2) {
+//     return `${names[0]} and ${names[1]} likes this`;
+//   }
+//   if (names.length == 3) {
+//     return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+//   } else {
+//     return `${names[0]}, ${names[1]} and ${[
+//       names.length - 2,
+//     ]} others like this`;
+//   }
+// };
+
+// log(likes(test));
+// let num = 34532535;
+// const squareDigits = (num) => {
+//   newArray = [];
+//   let stringNum = [...num.toString()];
+//   stringNum.forEach((element) => {
+//     newArray.push(Math.pow(parseInt(element), 2));
+//     newArray.join("");
+//   });
+//   return parseInt(newArray.join(""));
+// // };
+// // log("2" * "2");
+
+// const sumDigits = (number) => {
+//   sum = 0;
+//   [...Math.abs(number).toString()].forEach((element) => {
+//     sum = parseInt(element) + sum;
+//   });
+//   return sum;
+// };
+
+// log(sumDigits(18));
+
+// const findSum = (n) => {
+//   let newArray = [];
+//   let accum = 0;
+//   let accum2 = 0;
+//   let i = 0;
+//   let j = 0;
+//   let threes = Math.floor(n / 3);
+//   let fives = Math.floor(n / 5);
+//   while (i < threes) {
+//     newArray.push((accum = 3 + accum));
+//     i++;
+//   }
+//   while (j < fives) {
+//     newArray.push((accum2 = 5 + accum2));
+//     j++;
+//   }
+//   let uniqueChars = [...new Set(newArray)];
+//   return uniqueChars.reduce((a, b) => a + b, 0);
+// };
+
+// // log(findSum(5));
+
+// const isIsogram = (str) => {
+//   return [...new Set(str.toLowerCase())].join("") == str.toLowerCase();
+// };
+
+// log(isIsogram("Ddermatoglyphics"));
+
+const Benchmark = require("benchmark");
+
+const suite = new Benchmark.Suite();
+
+suite
+  .add("random test", function () {
+    // benchmark generating a random number
+    Math.floor(Math.random() * 10) + 1;
+  })
+  .on("complete", function () {
+    console.log(this);
+  })
+  .run();
