@@ -854,7 +854,7 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 // //     return num * -1;
 // //   }
 // // }
-// test = [2, 2, 3, 1, 2, 1];
+// walk = [2, 2, 3, 1, 2, 1];
 // const removeSmallest = (numbers) => {
 //   newArray = [];
 //   // newArray = numbers.map((x) => x * 1);
@@ -863,7 +863,7 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 //   log(indexOfMin);
 // };
 
-// // removeSmallest(test);
+// // removeSmallest(walk);
 // let rentalCarCost = (a) => {
 //   if (a == 1) {
 //     return 40;
@@ -909,12 +909,12 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 //   return total;
 // // };
 // // number(stops);
-// test = ["Beg", "Life", "I", "To"];
+// walk = ["Beg", "Life", "I", "To"];
 // const sortByLength = (array) => {
 // //   return array.sort((a, b) => b.length - a.length);
 // // };
 // lake = 40452;
-// // log(sortByLength(test));
+// // log(sortByLength(walk));
 // let expandedForm = (num) => {
 //   power = num.length;
 //   nNum = num.toString();
@@ -955,7 +955,7 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 //   return newAaray.join("");
 // };
 // DNAtoRNA(dan);
-// let tester = [9, 3, "7", "3"];
+// let walker = [9, 3, "7", "3"];
 
 // const sumMix = (array) => {
 //   i = 0;
@@ -966,8 +966,8 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 // //   return newArray.reduce((a, b) => a + b, 0);
 // // };
 
-// // log(sumMix(tester));
-// test = [1, 2, "aasf", "1", "123", 123];
+// // log(sumMix(walker));
+// walk = [1, 2, "aasf", "1", "123", 123];
 // const filter_list = (l) => {
 //   newArray = [];
 //   for (i = 0; i < l.length; i++) {
@@ -978,15 +978,15 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 //   return newArray;
 // };
 
-// let test = [2, 3, 1];
-// // log(filter_list(test));
+// let walk = [2, 3, 1];
+// // log(filter_list(walk));
 // const gimme = (triplet) => {
 //   newArray = triplet.map((x) => x * 1);
 //   sort = triplet.sort((a, b) => a - b);
 //   return newArray.indexOf(sort[1]);
 // };
 
-// log(gimme(test));
+// log(gimme(walk));
 // const roundToNext5 = (n) => {
 //   helper = n % 5;
 
@@ -1016,7 +1016,7 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 // };
 
 // amazoneDelivery(4);
-// testData = [
+// walkData = [
 //   [18, 20],
 //   [45, 2],
 //   [61, 12],
@@ -1036,7 +1036,7 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 //   return newArray;
 // };
 
-// // log(openOrSenior(testData));
+// // log(openOrSenior(walkData));
 // const arithmetic = (a, b, operator) => {
 //   if ((operator = "add")) {
 //     return a + b;
@@ -1052,7 +1052,7 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 //   }
 // };
 // log(arithmetic(7, 5, "multiply"));
-// let test = ["Alex", "Jacob", "Mark", "Max"];
+// let walk = ["Alex", "Jacob", "Mark", "Max"];
 // const likes = (names) => {
 //   if (names.length == 0) {
 //     return "no one likes this";
@@ -1072,7 +1072,7 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 //   }
 // };
 
-// log(likes(test));
+// log(likes(walk));
 // let num = 34532535;
 // const squareDigits = (num) => {
 //   newArray = [];
@@ -1119,20 +1119,217 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 
 // const isIsogram = (str) => {
 //   return [...new Set(str.toLowerCase())].join("") == str.toLowerCase();
+// // };
+
+// // log(isIsogram("Ddermatoglyphics"));
+
+// const Benchmark = require("benchmark");
+
+// const suite = new Benchmark.Suite();
+
+// suite
+//   .add("random walk", function () {
+//     // benchmark generating a random number
+//     Math.floor(Math.random() * 10) + 1;
+//   })
+//   .on("complete", function () {
+//     console.log(this);
+//   })
+//   .run();
+
+// const fibonacci = (position) => {
+//   // TODO: Add a comment describing the purpose of this conditional statement.
+//   if (position < 2) {
+//     return position;
+//   }
+
+//   // TODO: Add a comment describing the purpose of this return statement.
+// //   return fibonacci(position - 1) + fibonacci(position - 2);
+// // };
+
+// // // TODO: What will this return?
+// // console.log(fibonacci(9));
+
+// const countDown = (num) => {
+//   if (num === 0) return;
+//   log(num);
+//   countDown(num - 1);
 // };
 
-// log(isIsogram("Ddermatoglyphics"));
+// countDown(12);
 
-const Benchmark = require("benchmark");
+const animals = [
+  { name: "Lake", species: "dog" },
+  { name: "Charlie", species: "dog" },
+  { name: "Misty", species: "dog" },
+  { name: "Jim", species: "fish" },
+  { name: "Bow", species: "bird" },
+  { name: "Nuts", species: "squirle" },
+  { name: "Mac", species: "dog" },
+];
 
-const suite = new Benchmark.Suite();
+const orders = [
+  { amount: 350 },
+  { amount: 234 },
+  { amount: 123 },
+  { amount: 231 },
+  { amount: 350 },
+];
+// // this is an object that is just dogs
+// const isDog = animals.filter((x) => {
+//   return x.species === "dog";
+// });
 
-suite
-  .add("random test", function () {
-    // benchmark generating a random number
-    Math.floor(Math.random() * 10) + 1;
-  })
-  .on("complete", function () {
-    console.log(this);
-  })
-  .run();
+// const names = animals.map((animal) => {
+//   return `${animal.name} is a ${animal.species}`;
+// });
+// // log(names);
+// let totalAmount = orders.reduce((a, b) => {
+//   return a + b.amount;
+// }, 0);
+// log(totalAmount);
+// const getSum = (a, b) => {
+//   let sum = 0;
+//   if (a == b) {
+//     return a;
+//   }
+
+//   if (a > b) {
+//     for (i = a; i >= b; i--) {
+//       sum = sum + i;
+//     }
+
+//     return sum;
+//   }
+
+//   if (a < b) {
+//     log("hello");
+//     for (i = a; i <= b; i++) {
+//       sum = sum + i;
+//     }
+//   }
+//   return sum;
+
+//   //Good luck!
+// };
+
+// getSum(-1, 2);
+// log(getSum(1, 0));
+
+// longest = "man i need a taxi up to ubud";
+// log(longest.split(" "));
+// score1 = ["a", "a", "c", "b"];
+// score2 = ["a", "a", "b", ""];
+// const checkExam = (arrayA, arrayB) => {
+//   let score = 0;
+//   for (i = 0; i < arrayA.length; i++) {
+//     if (arrayA[i] === arrayB[i]) {
+//       score = score + 4;
+//     }
+//     if (arrayA[i] == "") {
+//       score = score + 0;
+//     }
+//     if ((arrayA[i] !== arrayB[i]) & (arrayA[i] !== "")) {
+//       score = score - 1;
+//       log(score);
+//     }
+//   }
+//   return score;
+// };
+// checkExam(score1, score2);
+// // log(checkExam(score1, score2));
+
+// const capitals = (word) => {
+//   array = [];
+//   for (i = 0; i < word.length; i++)
+//     if (word[i] == word[i].toUpperCase()) {
+//       array.push(i);
+//     }
+//   return array;
+// };
+
+// const declareWinnder = (fighter1, fighter2, firstAttacker) => {};
+
+// const nameShuffler = (str) => {
+//   string = str.split(" ");
+//   return string[1] + "" + string[0];
+// };
+
+// nameShuffler("Lake Stroup");
+
+// const max = (array) => {
+//   let max = Math.max(array);
+
+//   return max;
+// };
+
+// const min = (array) => {
+//   let min = Math.min(array);
+
+//   return min;
+// };
+
+// log(max([4, 5, 7]));
+walk = ["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"];
+
+// const isValidWalk = (walk) => {
+//   let count = 0;
+//   let countValues = (array, countItem) => {
+//     array.forEach((itm) => {
+//       if (itm == countItem) count++;
+//     });
+//     return count;
+//   };
+//   if (
+//     (countValues(walk, "n") === countValues(walk, "s")) &
+//     (countValues(walk, "e") === countValues(walk, "w")) &
+//     (walk.length = 10)
+//   )
+//     return true;
+// };
+// log(isValidWalk(walk));
+
+// const isValidWalk = (walk) => {
+//   let count = 0;
+//   let countValues = (array, countItem) => {
+//     array.forEach((itm) => {
+//       if (itm == countItem) count++;
+//     });
+//     return count;
+//   };
+
+//   log(countValues(walk, "e"));
+// };
+// log(isValidWalk(walk));
+
+// const SeriesSum = (n) => {
+//   array = [];
+
+//   for (i = 1; i < n + 1; i++) {
+//     array.push(1 / (i * 3 - 2));
+//   }
+//   return array
+//     .reduce((a, b) => a + b, 0)
+//     .toFixed(2)
+//     .toString();
+// };
+// log(SeriesSum(5));
+mav = [";D", ":-(", ":-)", ";~)"];
+const countSmileys = (arr) => {
+  smileyCount = 0;
+  for (i = 0; i < arr.length; i++) {
+    if (
+      arr[i] === ":)" ||
+      arr.replace(~- ,"")[i].replace(`~``-`, "") === ":D" ||
+      arr[i].replace(`~``-`, "") === ";D" ||
+      arr[i].replace(`~``-`, "") === ";)"
+    ) {
+      log(smileyCount);
+      smileyCount++;
+    }
+  }
+  return smileyCount;
+};
+
+log(countSmileys(mav));
+log(mav[1]);
