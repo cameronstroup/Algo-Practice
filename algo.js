@@ -1009,11 +1009,12 @@ letters = ["s", "d", "g", "s", "s", "s", "g", "g", "a", "b"];
 
 // const amazoneDelivery = (weeks) => {
 //   let days = 5;
-//   let hours = 8;
+//   let hours = 4;
 //   let pay = 18.25;
 //   let tax = 0.88;
 //   log(days * hours * pay * tax * weeks);
 // };
+// amazoneDelivery(4);
 
 // amazoneDelivery(4);
 // walkData = [
@@ -1314,22 +1315,92 @@ walk = ["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"];
 //     .toString();
 // };
 // log(SeriesSum(5));
-mav = [";D", ":-(", ":-)", ";~)"];
-const countSmileys = (arr) => {
-  smileyCount = 0;
-  for (i = 0; i < arr.length; i++) {
-    if (
-      arr[i] === ":)" ||
-      arr.replace(~- ,"")[i].replace(`~``-`, "") === ":D" ||
-      arr[i].replace(`~``-`, "") === ";D" ||
-      arr[i].replace(`~``-`, "") === ";)"
-    ) {
-      log(smileyCount);
-      smileyCount++;
-    }
-  }
-  return smileyCount;
+// mav = [";D", ":-(", ":-)", ";~)"];
+// const countSmileys = (arr) => {
+//   smileyCount = 0;
+//   for (i = 0; i < arr.length; i++) {
+//     if (
+//       arr[i] === ":)" ||
+//       arr.replace(~- ,"")[i].replace(`~``-`, "") === ":D" ||
+//       arr[i].replace(`~``-`, "") === ";D" ||
+//       arr[i].replace(`~``-`, "") === ";)"
+//     ) {
+//       log(smileyCount);
+//       smileyCount++;
+//     }
+//   }
+//   return smileyCount;
+// };
+
+// log(countSmileys(mav));
+// log(mav[1]);
+
+// url = "www.whats.com";
+// const removeUrlAnchor = (url) => {
+//   const indexOfAnchor = url.indexOf("#");
+//   if (indexOfAnchor === -1) {
+//     return url;
+//   } else {
+//     return url.substr(1, indexOfAnchor - 1);
+//   }
+// };
+
+// // log(removeUrlAnchor(url));
+// let oddAndEvens = [3, 5, 7, 8, 8, 9, 10];
+// const sortArray = (array) => {
+//   const oddArray = [];
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] % 2 !== 0) {
+//       oddArray.pop(array[i]);
+//       log(oddArray), log(array);
+//     }
+//   }
+// };
+
+// sortArray(oddAndEvens);
+
+// cameronIsCool = ["lake", ...vals, "shot an 84 today"];
+// log(cameronIsCool);
+
+// const reverseLetter = (str) => {
+//   return str.replace(/[^a-z]/gi, "t");
+//   // .split("")
+//   // .reverse()
+//   // .join("");
+// };
+
+// log(reverseLetter("cameorn is so cool !!!!!!!!"));
+
+// const findMultiples = (integer, limit) => {
+//   array = [];
+//   sum = integer;
+//   while (integer < limit + 1) {
+//     array.push(integer);
+//     integer = sum + integer;
+//   }
+//   return array;
+// };
+// log(findMultiples(5, 25));
+
+const isAnagram = (test, original) => {
+  return (
+    [...test.toUpperCase()].sort().join() == [...original.toUpperCase()].sort()
+  );
 };
 
-log(countSmileys(mav));
-log(mav[1]);
+log(isAnagram("Twoo", "WooT"));
+
+const getRealFloor = (n) => {
+  if (n <= 0) {
+    return n;
+  }
+  if ((n >= 1) & (n <= 13)) {
+    return n - 1;
+  } else {
+    return n - 2;
+  }
+};
+
+log(getRealFloor(-3));
+log(getRealFloor(3));
+log(getRealFloor(13));
