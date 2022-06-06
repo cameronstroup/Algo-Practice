@@ -1382,25 +1382,177 @@ walk = ["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"];
 // };
 // log(findMultiples(5, 25));
 
-const isAnagram = (test, original) => {
-  return (
-    [...test.toUpperCase()].sort().join() == [...original.toUpperCase()].sort()
-  );
-};
+// const isAnagram = (test, original) => {
+//   return (
+//     [...test.toUpperCase()].sort().join() == [...original.toUpperCase()].sort()
+//   );
+// };
 
-log(isAnagram("Twoo", "WooT"));
+// log(isAnagram("Twoo", "WooT"));
 
-const getRealFloor = (n) => {
-  if (n <= 0) {
-    return n;
-  }
-  if ((n >= 1) & (n <= 13)) {
-    return n - 1;
-  } else {
-    return n - 2;
-  }
-};
+// const getRealFloor = (n) => {
+//   if (n <= 0) {
+//     return n;
+//   }
+//   if ((n >= 1) & (n <= 13)) {
+//     return n - 1;
+//   } else {
+//     return n - 2;
+//   }
+// };
 
-log(getRealFloor(-3));
-log(getRealFloor(3));
-log(getRealFloor(13));
+// log(getRealFloor(-3));
+// log(getRealFloor(3));
+// log(getRealFloor(13));
+
+// const practice = () => {
+//   for (i = 5; i <= 200; i = i + 5) {
+//     log(i);
+//   }
+// };
+
+// practice();
+// const sequenceSum = (begin, end, step) => {
+//   answer = 0;
+//   for (i = begin; i <= end; i = i + step) {
+//     answer = answer + i;
+//   }
+//   return answer;
+// };
+
+// log(sequenceSum(1, 5, 1));
+
+// const sumStr = (a, b) => {
+//   if ((a == "") & (b == "")) {
+//     return "0";
+//   }
+
+//   if (a == "") {
+//     return parseInt(b).toString();
+//   }
+//   if (b == "") {
+//     return parseInt(a).toString();
+//   } else {
+//     return (parseInt(a) + parseInt(b)).toString();
+//   }
+// };
+// log(sumStr("", ""));
+
+// const solve = (s) => {
+//   const numUpper = (s.match(/[A-Z]/g) || []).length;
+//   const numlower = (s.match(/[a-z]/g) || []).length;
+//   if (numUpper > numlower) {
+//     return s.toUpperCase();
+//   }
+//   if (numlower >= numUpper) {
+//     return s.toLowerCase();
+// //   }
+// // };
+
+// // log(solve("CODe"));
+
+// // const areaOrPerimeter = (l, w) => {
+// //   if (l === w) {
+// //     return l * w;
+// //   } else {
+// //     return l * 2 + w * 2;
+// //   }
+// // };
+
+// function solution(str, ending) {
+//   return str.slice(-ending.length) === ending;
+// }
+
+// log(solution("samurai", "ai"));
+
+// const deleteNth = (arr, n) => {
+//   const counts = {};
+//   valuesCut = [];
+//   arr.forEach(function (x) {
+//     counts[x] = (counts[x] || 0) + 1;
+//   });
+
+//   const keys = Object.entries(counts);
+
+//   log(keys[1][1]);
+//   for (i = 0; i < keys.length; i++) {
+//     if (keys[i][1] > n) {
+//       valuesCut.push(keys[i]);
+//     }
+//   }
+//   log(valuesCut);
+// };
+
+// deleteNth([1, 1, 3, 3, 3, 3, 7, 2, 2, 2, 2], 3);
+
+// const myBill = () => {
+//   log(1915 * 6 + 1000);
+// };
+
+// // myBill();
+
+// const minValue = (values) => {
+//   min = Math.min(...values);
+//   return values.filter((e) => e ===
+// };
+
+// // log(minValue([1, 3, 4, 5]));
+// const getMiddle = (s) => {
+//   if (s.length % 2 !== 0) {
+//     return s.charAt(s.length / 2);
+//   } else {
+//     return s.charAt(s.length / 2 - 1) + s.charAt(s.length / 2);
+//   }
+// };
+
+// log(getMiddle("Lake"));
+// // // log(getMiddle("lake"));
+// function getMiddle(s) {
+//   return s.slice(middle - 1, middle + 1);
+// }
+
+let myName = [1, 2, 3, 4];
+let myPet = [5, 6, 7, 8, 19];
+// log(string.slice(1, -2));
+
+// const reverseWords = (str) => {
+//   theAnswer = [];
+//   arrayN = myName.split(" ");
+//   for (i = 0; i < arrayN.length; i++) {
+//     theAnswer.push(arrayN[i].split("").reverse().join(""));
+//   }
+//   return theAnswer.join(" ");
+// log(reverseWords(myName));
+
+// log([...myPet, ...myName].sort());
+// function mergeArrays(arr1, arr2) {
+//   return arr1.concat(arr2).sort((a, b) => {
+//     return a - b;
+//   });
+// // }
+
+// // log(mergeArrays(myName, myPet));
+
+// const nbYear = (p0, percent, aug, p) => {
+//   function yearCal() {
+//     return (p0 = p0 * (percent / 100) + p0 + aug);
+//   }
+//   log((p0 = 15 * yearCal));
+// };
+// nbYear(1500, 5, 100, 5000);
+
+// const noBoringZeros = (n) => {
+//   if (n % 10 === 0) {
+//     array = [...n.toString()];
+//     for (i = array.length; i > 0; i--) {
+//       if (array[i] == "0") {
+//         array.pop(array[i]);
+//       }
+//     }
+//     return parseInt(array.join(""));
+//   } else {
+//     return n;
+//   }
+// };
+
+log(noBoringZeros(-8905));
