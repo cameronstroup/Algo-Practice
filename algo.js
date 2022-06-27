@@ -1553,6 +1553,90 @@ let myPet = [5, 6, 7, 8, 19];
 //   } else {
 //     return n;
 //   }
+// // };
+
+// log(noBoringZeros(-8905));
+
+// function setAlarm(employed, vacation) {
+//   if ((employed === true) & (vacation === true)) {
+//     return true;
+//   } else {
+//     return false;
+// //   }
+// // }
+
+// const powersOfTwo = (n) => {
+//   array = [];
+
+//   for (i = 0; i <= n; i++) {
+//     array.push(Math.pow(2, i));
+//   }
+//   return array;
 // };
 
-log(noBoringZeros(-8905));
+// log(powersOfTwo(1));
+
+// const positiveSum = (arr) => {
+// // };
+
+// // positiveSum([1, -4, 7, 12]);
+// const flattenAndSort = (array) => {
+//   arrays = array
+//     .join()
+//     .split(",")
+//     .filter((word) => word !== "")
+//     .map(Number)
+//     .sort((a, b) => {
+//       return a - b;
+//     });
+
+//   return arrays;
+// };
+
+// arrayOfArrays = [[], []];
+// flattenAndSort(arrayOfArrays);
+
+// const longest = (s1, s2) => {
+//   ArrayS = new Set([...s1, ...s2]);
+//   return Array.from(ArrayS).sort().join("");
+// };
+
+// log(longest("aretheyhere", "yestheyarehere"));
+
+// function greet(name, owner) {
+//   if (name === owner) {
+//     return "Hello boss";
+//   } else {
+//     return "Hello guest";
+//   }
+// }
+
+// const order = (words) => {
+//   log(words.split(" "));
+// };
+
+// // order("is2 Thi1s T4est 3a");
+// function reverseList(list) {
+//   return list.reverse();
+// }
+
+// // function distinct(a) {
+// //   return [...new Set(a)];
+// // }
+// // log(distinct([1, 1, 2]));
+// // log(distinct);
+// function unusualFive() {
+//   const index = "hello";
+//   return index.length;
+//   //
+// // }
+
+// // console.log(unusualFive(0));
+
+// function howManyLightsabersDoYouOwn(name) {
+//   if (name === "Zach") {
+//     return 19;
+//   } else return 0;
+// }
+
+// log(howManyLightsabersDoYouOwn("jim"));
